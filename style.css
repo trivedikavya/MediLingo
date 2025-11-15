@@ -1,0 +1,142 @@
+/* Basic Setup */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Header */
+header {
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+header h1 {
+    color: #005a9c;
+    margin: 0;
+}
+header p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Controls */
+.controls {
+    margin-bottom: 20px;
+}
+.controls label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+#lang-switcher {
+    font-size: 1rem;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Instruction Picker */
+.instruction-picker {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+.instruction-picker label {
+    display: flex;
+    align-items: center;
+    font-size: 1.05rem;
+    background: #fafafa;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.instruction-picker label:hover {
+    background: #f0f0f0;
+}
+.instruction-picker input[type="checkbox"] {
+    margin-right: 12px;
+    transform: scale(1.2);
+}
+
+/* Button */
+#generate-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+#generate-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Printable Sheet */
+.print-sheet {
+    margin-top: 30px;
+    padding: 25px;
+    border: 2px dashed #007bff;
+    border-radius: 5px;
+    background: #f8faff;
+}
+.print-sheet h2 {
+    margin-top: 0;
+    color: #005a9c;
+}
+.print-sheet ul {
+    padding-left: 20px;
+}
+.print-sheet li {
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.print-footer {
+    margin-top: 20px;
+    font-style: italic;
+    color: #555;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+/* Print-friendly styles */
+@media print {
+    body {
+        padding: 0;
+        background: #fff;
+    }
+    .container, .print-sheet {
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+    }
+    header, .controls, .instruction-picker, #generate-btn {
+        /* Hide everything except the print sheet */
+        display: none; 
+    }
+    .print-sheet {
+        display: block; /* Show the print sheet */
+    }
+}

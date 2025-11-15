@@ -1,0 +1,19 @@
+{
+  "ui": {
+    "title": "MediLingo: Patient Instruction Sheet",
+    "subtitle": "Select instructions and your preferred language.",
+    "language_label": "Patient's Language:",
+    "generate_button": "Generate & Print Sheet",
+    "print_title": "Your Medical Instructions",
+    "print_footer": "Show this to your pharmacist if you have questions."
+  },
+  "instructions": {
+    "inst_1": "Take 1 pill in the morning.",
+    "inst_2": "Take 2 pills, 3 times a day.",
+    "inst_3": "Must be taken with food.",
+    "inst_4": "Take on an empty stomach.",
+    "inst_5": "Finish the entire prescription.",
+    "inst_6": "Do not drink alcohol while taking.",
+    "inst_7": "May cause drowsiness. Do not drive."
+  }
+}

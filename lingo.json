@@ -1,0 +1,11 @@
+{
+  "sourceLocale": "en",
+  "targetLocales": [
+    "es",
+    "hi",
+    "vi"
+  ],
+  "format": "json",
+  "source": "translations/en.json",
+  "target": "translations/[locale].json"
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-key="ui.title">MediLingo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1 data-key="ui.title">MediLingo: Patient Instruction Sheet</h1>
+            <p data-key="ui.subtitle">Select instructions and your preferred language.</p>
+        </header>
+
+        <div class="controls">
+            <label for="lang-switcher" data-key="ui.language_label">Patient's Language:</label>
+            <select id="lang-switcher">
+                <option value="en" selected>English</option>
+                <option value="es">Español (Spanish)</option>
+                <option value="hi">हिन्दी (Hindi)</option>
+                <option value="vi">Tiếng Việt (Vietnamese)</option>
+            </select>
+        </div>
+
+        <div class="instruction-picker" id="checkbox-container">
+            </div>
+
+        <button id="generate-btn" data-key="ui.generate_button">Generate & Print Sheet</button>
+
+        <div class="print-sheet" id="print-sheet">
+            <h2 data-key="ui.print_title">Your Medical Instructions</h2>
+            <ul id="instruction-list">
+                </ul>
+            <p class="print-footer" data-key="ui.print_footer">Show this to your pharmacist if you have questions.</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
